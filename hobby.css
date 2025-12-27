@@ -1,0 +1,122 @@
+* 
+    {
+        margin: 0;
+        padding: 5;
+        box-sizing: border-box;
+    }
+
+.hero 
+    {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+.logo 
+    {
+        font-family: 'Great Vibes', cursive;
+        font-size: 70px;
+        color: #262c38;
+
+        text-shadow:
+            5px 5px 0 #e0dedc,
+            2px 2px 0 #fff2ea,
+            10px 5px 5px rgb(255, 255, 255);
+    }
+
+.navbar 
+    {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding: 10px 0;
+        background-color: rgba(0, 0, 0, 0.418); /* semi-transparent bar */
+    }
+
+.navbar a 
+    {
+        text-decoration: none;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+.navbar a:hover 
+    {
+        text-decoration: underline;
+    }
+
+/* section container */
+.focus-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 60px 20px;
+}
+
+/* individual strip */
+.hobby-strip {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.85); /* semi-transparent for GIF */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: filter 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* hover effect */
+.hobby-strip:hover {
+  filter: brightness(1.15);
+  transform: translateY(-3px);
+}
+
+/* image */
+.strip-image {
+  width: 100%;
+  max-width: 480px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* content */
+.strip-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.strip-content h2 {
+  margin: 10px 0 6px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.strip-content p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* optional: dim all non-hover strips */
+.focus-strip:hover .hobby-strip:not(:hover) {
+  filter: brightness(0.75);
+}
+
+/* container to put images in one line */
+.image-row {
+  display: flex;         
+  gap: 10px;              
+  justify-content: center; 
+  margin-bottom: 15px;
+}
+
+.image-row .strip-image {
+  width: 30%;             
+  height: 350px;          
+  object-fit: cover;
+  border-radius: 12px;
+}
