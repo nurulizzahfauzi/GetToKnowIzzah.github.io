@@ -1,3 +1,4 @@
+/* MY HEADER */
 * 
     {
         margin: 0;
@@ -23,6 +24,7 @@
             10px 5px 5px rgb(255, 255, 255);
     }
 
+/* MY NAVIGATION BAR */
 .navbar 
     {
         display: flex;
@@ -46,6 +48,7 @@
         text-decoration: underline;
     }
 
+/* OPENING SECTION FOR THIS PAGE */
 .section-opening
     {
         padding: 20px;
@@ -59,32 +62,38 @@
         font-size: 17px;
     }
 
-.genre-section {
-    background-color: rgba(255, 255, 255, 0.85);
-    margin: 40px auto;
-    padding: 25px;
-    width: 90%;
-    max-width: 1400px;
-    border-radius: 12px;
-}
+/* FAVOURITE MOVIE SECTION */
+.genre-section 
+    {
+        background-color: rgba(255, 255, 255, 0.85);
+        margin: 40px auto;
+        padding: 25px;
+        width: 90%;
+        max-width: 1400px;
+        border-radius: 12px;
+    }
 
-.genre-section h2 {
-    text-align: center;
-    font-size: 32px;
-    letter-spacing: 2px;
-}
+.genre-section h2 
+    {
+        text-align: center;
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
 
-.genre-section p {
-    text-align: center;
-    margin-bottom: 20px;
-}
+.genre-section p 
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-.genre-section img {
-    background-color: rgb(170, 182, 174);
-    padding: 12px 12px 25px;
-    border: 2px solid #cccccc;
-}
+.genre-section img 
+    {
+        background-color: rgb(170, 182, 174);
+        padding: 12px 12px 25px;
+        border: 2px solid #cccccc;
+    }
 
-.genre-section td:hover {
-  filter: brightness(1.15);
-}
+.genre-section td:hover 
+    {
+        filter: brightness(1.15);
+    }
